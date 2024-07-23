@@ -15,7 +15,7 @@ def render_object_at_angle(vertices, faces, angle, output_filename):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
-    ax.add_collection3d(Poly3DCollection([vertices[face] for face in faces], facecolors='cyan', linewidths=1, edgecolors='r', alpha=.25))
+    ax.add_collection3d(Poly3DCollection([vertices[face] for face in faces], linewidths=1, alpha=.25))
 
     ax.set_xlabel('X')
     ax.set_ylabel('Y')
